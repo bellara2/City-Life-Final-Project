@@ -44,9 +44,9 @@ sd(dataset$pov_avg)
 ##################################################################################
 #################### Figure 1: boxplot             ####################   
 ##################################################################################
-anova <- aov(pov_avg ~ pov_over10, data = dataset)
+anova <- aov(pov_avg ~ nhwhite, data = dataset)
 summary(anova)
-boxplot(pov_avg ~ pov_over10, data = dataset)
+boxplot(pov_avg ~ nhwhite, data = dataset)
 
 ##################################################################################
 ####################   Figure 2: scatter plot             ####################   
